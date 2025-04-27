@@ -21,6 +21,72 @@ html {
 
 
 /* Styles for Functionalities Section*/
+.functionalities {
+    display: flex;
+    padding: 40px 20px;
+    min-height: 600px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-margin-top: 10vh;
+    background-color: #1C2541;
+}
+
+.functionalities img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.function-content {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.function-content li {
+    color: #000;
+}
+
+
+.function-content h2 {
+    color: #6FFFE9;
+    margin: 40px 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.function-content .function-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.function-card {
+    border-radius: 15px;
+    width: 340px;
+    height: auto;
+    min-height: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.function-card ul li {
+    margin: 0 32px 24px 48px;
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+.function-info .function-card h3 {
+    font-size: 1.5em;
+    color: #5BC0BE;
+    text-align: center;
+    margin: 32px 0;
+}
 
 
 /* Styles for Plans Section*/
