@@ -27,7 +27,89 @@ html {
 
 
 /* Styles for About us Section*/
+.quienes-somos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #1C2541;
+    color: #fff;
+    scroll-margin-top: 10vh;
+}
 
+.quienes-somos h2{
+    color: #6FFFE9;
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0 8px 0;
+}
+
+.quienes-somos h4 {
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 0 32px 0;
+}
+
+.quienes-somos .startup-profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.quienes-somos .startup-info {
+    font-size: 1em;
+    color: #fff;
+    margin: 20px 0;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.quienes-somos .startup-img {
+    width: 150px;
+    height: 150px;
+}
+
+.quienes-somos .profile-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.profile-list .profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    margin: 10px;
+}
+
+.profile-item .profile-name {
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+.profile-item .profile-role {
+    color: #6FFFE9;
+}
+
+.quienes-somos img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 /* Styles for About the product Section*/
 
