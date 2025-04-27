@@ -16,6 +16,75 @@ html {
 
 /* Styles for Hero Section*/
 
+.hero {
+    min-height: 90vh;
+    display: flex;
+    background-color: #1C2541;
+    color: white;
+    justify-content: center;
+    padding: 20px;
+    scroll-margin-top: 10vh;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 100%;
+}
+
+.hero-info .title {
+    font-size: 4rem;
+    color: #6FFFE9;
+    font-weight: 600;
+    margin: 40px 0 16px 0;
+}
+
+.hero-info .slogan {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.hero-info .description {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 48px 24px;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-action {
+    background-color: #3A506B;
+    padding: 16px 40px;
+    margin: 16px 0;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.btn-action:hover {
+    background-color: #5BC0BE;
+    transition: all 0.3s ease;
+}
 
 /* Styles for Benefits Section*/
 
