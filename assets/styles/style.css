@@ -166,6 +166,69 @@ nav ul a:hover {
 
 /* Styles for Benefits Section*/
 
+.benefits{
+    display: flex;
+    padding: 40px 20px;
+    min-height: 600px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-margin-top: 10vh;
+    background-color: #fff;
+}
+
+.benefits img{
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.benefits-content{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.benefits-content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0;
+    color: #5BC0BE;
+}
+
+.benefits-content .benefits-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.benefits-card{
+    border-radius: 15px;
+    width: 340px;
+    height: auto;
+    min-height: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #1C2541;
+}
+
+.benefits-card h3 {
+    font-size: 1.5em;
+    color: #6FFFE9;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.benefits-card ul li {
+    margin: 0 32px 24px 48px;
+    text-align: justify;
+    font-size: 1.25em;
+    color: #fff;
+}
 
 /* Styles for Functionalities Section*/
 
