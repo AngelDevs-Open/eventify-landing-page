@@ -283,5 +283,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Detectar idioma actual por el nombre del archivo
+    const path = window.location.pathname;
+    const isSpanish = !path.includes('index-en.html');
+
+    const btnES = document.getElementById('btn-es');
+    const btnEN = document.getElementById('btn-en');
+
+    if (isSpanish) {
+        btnES.classList.add('active');
+        btnEN.classList.remove('active');
+    } else {
+        btnEN.classList.add('active');
+        btnES.classList.remove('active');
+    }
+
+    btnES.addEventListener('click', () => {
+        if (!isSpanish) {
+            window.location.href = 'index.html';
+        }
+    });
+
+    btnEN.addEventListener('click', () => {
+        if (isSpanish) {
+            window.location.href = 'index-en.html';
+        }
+    });
 
 });
