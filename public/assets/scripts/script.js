@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Detect current language by file name
     const path = window.location.pathname;
-    const isSpanish = !path.includes('index-en.html');
+    const isSpanish = !path.includes('index.html');
 
     const btnES = document.getElementById('btn-es');
     const btnEN = document.getElementById('btn-en');
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnEN.addEventListener('click', () => {
         if (isSpanish) {
-            window.location.href = 'index-en.html';
+            window.location.href = 'index.html';
         }
     });
 
