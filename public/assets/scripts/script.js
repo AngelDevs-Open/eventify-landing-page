@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Detect current language by file name
     const path = window.location.pathname;
-    const isSpanish = !path.includes('index.html');
+    const isSpanish = path.includes('index-es.html');
 
     const btnES = document.getElementById('btn-es');
     const btnEN = document.getElementById('btn-en');
@@ -299,13 +299,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnES.addEventListener('click', () => {
         if (!isSpanish) {
-            window.location.href = 'index-es.html';
+            window.location.href = 'public/index-es.html';
         }
     });
 
     btnEN.addEventListener('click', () => {
         if (isSpanish) {
-            window.location.href = 'index.html';
+            window.location.href = '../index.html';
         }
     });
 
