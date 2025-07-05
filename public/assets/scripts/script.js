@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Elementos del DOM
+    // Elements of DOM
     const hamburgerIcon = document.querySelector('.hamburguer-icon');
     const navLinks = document.querySelector('nav ul');
     const navLinksItems = document.querySelectorAll('nav ul li a');
 
-    // Crear el menú móvil
+    // Create the menu mobile
     function createMobileMenu() {
-        // Crear el elemento del menú móvil
+        // Create the mobile menu container
         const mobileMenu = document.createElement('ul');
         mobileMenu.className = 'mobile-menu';
 
-        // Clonar los elementos de navegación
+        // Clone the elements from the navigation links
         navLinksItems.forEach(item => {
             const li = document.createElement('li');
             const a = document.createElement('a');
             a.href = item.href;
             a.textContent = item.textContent;
 
-            // Añadir evento de clic para cerrar el menú al navegar
+            // Add click event to close the menu when a link is clicked
             a.addEventListener('click', function() {
                 mobileMenu.classList.remove('active');
             });
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenu.appendChild(li);
         });
 
-        // Añadir el menú móvil al body
+        // Add the menu mobile to the body
         document.body.appendChild(mobileMenu);
 
         return mobileMenu;
@@ -34,19 +34,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const mobileMenu = createMobileMenu();
 
-    // Toggle del menú hamburguesa
+    // Toggle the mobile menu when the hamburger icon is clicked
     hamburgerIcon.addEventListener('click', function(e) {
         e.preventDefault();
         mobileMenu.classList.toggle('active');
     });
 
-    // Cerrar el menú móvil al hacer clic fuera de él
+    // Close the mobile menu when clicking outside of it
     document.addEventListener('click', function(e) {
         if (!e.target.closest('.hamburguer-icon') && !e.target.closest('.mobile-menu')) {
             mobileMenu.classList.remove('active');
         }
     });
-// Smooth scroll para los enlaces de navegación
+// Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animación para planes al hacer hover
+    // Animation for the navigation links plans
     const planCards = document.querySelectorAll('.plan-card');
 
     planCards.forEach(card => {
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animación para los botones de Call to Action
+    // Anmation for the call-to-action buttons
     const ctaButtons = document.querySelectorAll('.btn-action, .plan-card-btn');
 
     ctaButtons.forEach(button => {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Añadir efecto de scroll para cambiar el color de la navegación
+    // Add a scroll effect to the navigation bar
     window.addEventListener('scroll', function() {
         const nav = document.querySelector('nav');
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Añadir efecto resaltar para el elemento de navegación activo según la sección visible
+    // Add highlight effect to the active navigation element based on the visible section
     const sections = document.querySelectorAll('section');
 
     window.addEventListener('scroll', function() {
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // También actualizar el menú móvil
+        // Refresh the mobile menu links
         document.querySelectorAll('.mobile-menu li a').forEach(link => {
             if (link.getAttribute('href') === `#${current}`) {
                 link.style.color = '#6FFFE9';
@@ -145,20 +145,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Añadir un efecto de carga al inicio de la página
+    // Add a loading effect at the start of the page
     function addPageLoader() {
         const loader = document.createElement('div');
         loader.className = 'page-loader';
         loader.innerHTML = `
              <div class="loader-content">
-                 <img src="assets/images/eventify-logo.png" alt="Eventify Logo" />
+                 <img src="/public/assets/images/eventify-logo.png" alt="Eventify Logo" />
                  <div class="loader-spinner"></div>
              </div>
          `;
 
         document.body.appendChild(loader);
 
-        // Añadir los estilos para el loader
+        // Add styles for the loader
         const loaderStyle = document.createElement('style');
         loaderStyle.textContent = `
              .page-loader {
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
          `;
         document.head.appendChild(loaderStyle);
 
-        // Ocultar el loader después de que la página cargue
+        // Hide the loader after the page loads
         window.addEventListener('load', function() {
             setTimeout(() => {
                 loader.style.opacity = '0';
@@ -212,10 +212,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Ejecutar la función para añadir el loader
+    // Execute the function to add the loader
     addPageLoader();
 
-    // Añadir efecto de animación para elementos al hacer scroll
+    // Add scroll animations to elements
     function addScrollAnimations() {
         const elementsToAnimate = [
             ...document.querySelectorAll('h2'),
@@ -226,14 +226,14 @@ document.addEventListener('DOMContentLoaded', function() {
             ...document.querySelectorAll('.startup-profile')
         ];
 
-        // Añadir clase inicial para los elementos
+        // Add initial styles for the elements to animate
         elementsToAnimate.forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(20px)';
             element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         });
 
-        // Función para verificar si un elemento está en el viewport
+        // Function to check if an element is in the viewport
         function isElementInViewport(el) {
             const rect = el.getBoundingClientRect();
             return (
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
             );
         }
 
-        // Función para animar elementos visibles
+        // Function to animate elements when they are in the viewport
         function animateElementsOnScroll() {
             elementsToAnimate.forEach(element => {
                 if (isElementInViewport(element)) {
@@ -251,22 +251,21 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        // Ejecutar la animación cuando se hace scroll
+        // Execute the animation when scrolling
         window.addEventListener('scroll', animateElementsOnScroll);
 
-        // Ejecutar la animación al cargar la página
+        // Execute the animation on page load
         setTimeout(animateElementsOnScroll, 100);
     }
 
-    // Ejecutar función para añadir animaciones al scroll
+    // Execute the function to add scroll animations
     addScrollAnimations();
 
-    // Añadir funcionalidad para los iconos de redes sociales
+    // Add click event to the social media icons in the footer
     const socialIcons = document.querySelectorAll('.footer-social-networks i');
 
     socialIcons.forEach(icon => {
         icon.addEventListener('click', function() {
-            // Aquí se puede añadir links a redes sociales reales cuando estén disponibles
             const socialLinks = {
                 'fa-x-twitter': 'https://twitter.com',
                 'fa-instagram': 'https://instagram.com',
@@ -283,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Detectar idioma actual por el nombre del archivo
+    // Detect current language by file name
     const path = window.location.pathname;
     const isSpanish = !path.includes('index-en.html');
 
@@ -300,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnES.addEventListener('click', () => {
         if (!isSpanish) {
-            window.location.href = 'index.html';
+            window.location.href = 'index-es.html';
         }
     });
 

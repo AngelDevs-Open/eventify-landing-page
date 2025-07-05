@@ -318,7 +318,7 @@ nav ul a:hover {
     margin: 40px 0 8px 0;
 }
 
-.plans h4, .quienes-somos h4, .about-product h4 {
+.plans h4, .about-us h4, .about-product h4 {
     margin: 0 0 32px 0;
     font-size: 1.25em;
     font-weight: 400;
@@ -399,7 +399,7 @@ nav ul a:hover {
 
 
 /* Styles for About us Section*/
-.quienes-somos {
+.about-us {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -410,14 +410,14 @@ nav ul a:hover {
     scroll-margin-top: 10vh;
 }
 
-.quienes-somos h2{
+.about-us h2{
     color: #6FFFE9;
     font-size: 2em;
     text-align: center;
     margin: 40px 0 8px 0;
 }
 
-.quienes-somos h4 {
+.about-us h4 {
     color: #fff;
     font-size: 1.25em;
     font-weight: 400;
@@ -426,7 +426,7 @@ nav ul a:hover {
     margin: 0 0 32px 0;
 }
 
-.quienes-somos .startup-profile {
+.about-us .startup-profile {
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -436,7 +436,7 @@ nav ul a:hover {
     justify-content: center;
 }
 
-.quienes-somos .startup-info {
+.about-us .startup-info {
     font-size: 1em;
     color: #fff;
     margin: 20px 0;
@@ -444,12 +444,12 @@ nav ul a:hover {
     padding: 0 20px;
 }
 
-.quienes-somos .startup-img {
+.about-us .startup-img {
     width: 150px;
     height: 150px;
 }
 
-.quienes-somos .profile-list {
+.about-us .profile-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -476,7 +476,7 @@ nav ul a:hover {
     color: #6FFFE9;
 }
 
-.quienes-somos img {
+.about-us img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
