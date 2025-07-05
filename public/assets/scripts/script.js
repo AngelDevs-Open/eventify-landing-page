@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnEN.addEventListener('click', () => {
         if (isSpanish) {
-            window.location.href = '../index.html';
+            window.location.href = '../../index.html';
         }
     });
 
