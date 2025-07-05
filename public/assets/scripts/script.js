@@ -299,13 +299,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnES.addEventListener('click', () => {
         if (!isSpanish) {
-            window.location.href = 'public/index-es.html';
+            window.location.href = 'index-es.html';
         }
     });
 
     btnEN.addEventListener('click', () => {
         if (isSpanish) {
-            window.location.href = '../../index.html';
+            window.location.href = 'index.html';
         }
     });
 
