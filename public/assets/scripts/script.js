@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loader.className = 'page-loader';
         loader.innerHTML = `
              <div class="loader-content">
-                 <img src="/public/assets/images/eventify-logo.png" alt="Eventify Logo" />
+                 <img src="/eventify-landing-page/assets/images/eventify-logo.png" alt="Eventify Logo" />
                  <div class="loader-spinner"></div>
              </div>
          `;
