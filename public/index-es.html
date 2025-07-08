@@ -6,10 +6,10 @@
     <meta name="description" content="Eventify es la plataforma donde anfitriones encuentran al organizador ideal y organizadores hacen crecer su negocio. Conecta, organiza y celebra con confianza.">
     <meta name="keywords" content="eventos, organización, anfitriones, organizadores, bodas, celebraciones, gestión de eventos, planificación de eventos">
     <meta name="author" content="AngelDevs">
-    <link rel="icon" href="/public/assets/images/eventify-icon.png" type="image/png">
+    <link rel="icon" href="./assets/images/eventify-icon.png" type="image/png">
     <title>Eventify - Landing page</title>
-    <link rel="stylesheet" href="/public/assets/styles/style.css">
-    <script defer src="/public/assets/scripts/script.js"></script>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script defer src="./assets/scripts/script.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -18,14 +18,16 @@
 <!-- Header Section -->
 <header>
     <nav>
-        <div class="logo"><a href="#hero"><img src="/public/assets/images/eventify-logo.png" alt="eventify-logo"></a></div>
+        <div class="logo"><a href="#hero"><img src="./assets/images/eventify-logo.png" alt="eventify-logo"></a></div>
         <ul>
             <li><a href="#hero">Inicio</a></li>
             <li><a href="#benefits">Beneficios</a></li>
             <li><a href="#functionalities">Funcionalidades</a></li>
             <li><a href="#plans">Planes</a></li>
-            <li><a href="#quienes-somos">¿Quienes Somos?</a></li>
-            <li><a href="#about-product">About the Product</a></li>
+            <li><a href="#about-us">¿Quiénes Somos?</a></li>
+            <li><a href="#about-product">Sobre el Producto</a></li>
+            <li><a class="btn-recurrent" href="https://eventify-open-frontend.web.app/home" target="_blank">Empecemos</a></li>
+
         </ul>
         <div class="language-switcher">
             <input type="button" value="ES" class="btn-lang active" id="btn-es">
@@ -45,11 +47,54 @@
         <span class="slogan">Conecta - Organiza - Celebra</span>
         <p class="description">Una plataforma para que anfitriones encuentren al organizador ideal, y organizadores hagan crecer su negocio</p>
         <div class="call-to-action">
-            <a class="btn-action" href="#">Encuentra a tu organizador</a>
-            <a class="btn-action" href="#">Únete como organizador</a>
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Encuentra a tu organizador</a>
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Únete como organizador</a>
         </div>
     </div>
 </section>
+
+<!-- About the product Section -->
+
+<section class="about-product" id="about-product">
+    <div class="content">
+        <h2>Aprende como funciona eventify</h2>
+        <h4>Mira nuestro video tutorial y aprende a sacarle el máximo provecho desde el primer evento</h4>
+        <div class="call-to-action">
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Gestiona eventos con facilidad</a>
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Organiza tus eventos sin estrés</a>
+        </div>
+    </div>
+    <div class="video-about-product">
+        <iframe  src="https://www.youtube.com/embed/RmXh-lrJ9Nw?si=PjaC8JQPlI8Y3j-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" ></iframe>
+    </div>
+</section>
+
+<!-- Functionalities Section -->
+<section class="functionalities" id="functionalities">
+    <img src="assets/images/functionalities-section-image.png" alt="funtionalities-img" loading="lazy">
+    <div class="function-content">
+        <h2>¿Qué te ofrece Eventify?</h2>
+        <div class="function-info">
+            <div class="function-card">
+                <h3>Organizadores</h3>
+                <ul>
+                    <li>Crea eventos y cotizaciones</li>
+                    <li>Planificación de tareas por evento</li>
+                    <li>Calendario interactivo para organizar eventos</li>
+                </ul>
+            </div>
+            <div class="function-card">
+                <h3>Anfitriones</h3>
+                <ul>
+                    <li>Búsqueda y filtrado de organizadores</li>
+                    <li>Comunicación directa con el organizador</li>
+                    <li>Seguimiento de la planificación del organizador</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!--Benefits Section -->
 
@@ -81,31 +126,7 @@
 
 </section>
 
-<!-- Functionalities Section -->
-<section class="functionalities" id="functionalities">
-    <img src="assets/images/functionalities-section-image.png" alt="funtionalities-img" loading="lazy">
-    <div class="function-content">
-        <h2>¿Qué te ofrece Eventify?</h2>
-        <div class="function-info">
-            <div class="function-card">
-                <h3>Organizadores</h3>
-                <ul>
-                    <li>Crea eventos y cotizaciones</li>
-                    <li>Planificación de tareas por evento</li>
-                    <li>Calendario interactivo para organizar eventos</li>
-                </ul>
-            </div>
-            <div class="function-card">
-                <h3>Anfitriones</h3>
-                <ul>
-                    <li>Búsqueda y filtrado de organizadores</li>
-                    <li>Comunicación directa con el organizador</li>
-                    <li>Seguimiento de la planificación del organizador</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 
 <!-- Plans Section -->
@@ -117,11 +138,11 @@
             <h3>Plan Básico</h3>
             <span class="plan-price">S/. 300.00</span>
             <p class="plan-time">(mensuales)</p>
-            <p class="plan-desc">Ideal para quienes estan comenzando. Gestiona tus primero eventos y explora todas las herramientas</p>
+            <p class="plan-desc">Ideal para quienes están comenzando. Gestiona tus primeros eventos y explora todas las herramientas</p>
             <ul class="plan-detail">
                 <li>Permite trabajar hasta con 2 anfitriones al mismo tiempo</li>
             </ul>
-            <a class="plan-card-btn" href="#">Comenzar ahora</a>
+            <a class="plan-card-btn" href="https://eventify-open-frontend.web.app/home" target="_blank">Comenzar ahora</a>
         </div>
         <div class="plan-card">
             <h3>Plan Estándar</h3>
@@ -131,7 +152,7 @@
             <ul class="plan-detail">
                 <li>Permite trabajar hasta con 5 anfitriones al mismo tiempo</li>
             </ul>
-            <a class="plan-card-btn" href="#">Comenzar ahora</a>
+            <a class="plan-card-btn" href="https://eventify-open-frontend.web.app/home" target="_blank">Comenzar ahora</a>
         </div>
         <div class="plan-card">
             <h3>Plan Premium</h3>
@@ -141,14 +162,14 @@
             <ul class="plan-detail">
                 <li>Permite trabajar hasta con 10 anfitriones al mismo tiempo</li>
             </ul>
-            <a  class="plan-card-btn" href="#">Comenzar ahora</a>
+            <a  class="plan-card-btn" href="https://eventify-open-frontend.web.app/home" target="_blank">Comenzar ahora</a>
         </div>
     </div>
 </section>
 
 
 <!-- About us Section -->
-<section class="quienes-somos" id="quienes-somos">
+<section class="about-us" id="about-us">
     <h2>¿Quienes Somos?</h2>
     <h4>Conoce al equipo encargado en diseñar y desarrollar Eventify</h4>
     <div class="startup-profile">
@@ -157,42 +178,52 @@
     </div>
     <div class="profile-list">
         <div class="profile-item">
-            <img src="assets/images/member-profile-1.png" alt="profile1" loading="lazy">
-            <p class="profile-name">Jean Pierr Aldave Aldave</p>
-            <p class="profile-role">Ingeniero de Software</p>
-        </div>
-        <div class="profile-item">
-            <img src="assets/images/member-profile-2.jpg" alt="profile2" loading="lazy">
+            <img src="assets/images/developer-profile-2.jpg" alt="profile2" loading="lazy">
             <p class="profile-name">Omar Christian Berrocal Ramirez</p>
             <p class="profile-role">Ingeniero de Software</p>
         </div>
         <div class="profile-item">
-            <img src="assets/images/member-profile-3.jpg" alt="profile3" loading="lazy">
+            <img src="assets/images/developer-profile-3.jpg" alt="profile3" loading="lazy">
             <p class="profile-name">Deybbi Anderson Crisanto Calle</p>
             <p class="profile-role">Ingeniero de Software</p>
         </div>
         <div class="profile-item">
-            <img src="assets/images/member-profile-4.png" alt="profile4" loading="lazy">
+            <img src="assets/images/developer-profile-4.png" alt="profile4" loading="lazy">
             <p class="profile-name">Fabrizio Alexander Cutiri Agüero</p>
             <p class="profile-role">Ingeniero de Software</p>
         </div>
         <div class="profile-item">
-            <img src="assets/images/member-profile-5.jpg" alt="profile5" loading="lazy">
+            <img src="assets/images/developer-profile-5.jpg" alt="profile5" loading="lazy">
             <p class="profile-name">July Zelmira Paico Calderon</p>
+            <p class="profile-role">Ingeniero de Software</p>
+        </div>
+        <div class="profile-item">
+            <img src="assets/images/developer-profile-6.jpg" alt="profile6" loading="lazy">
+            <p class="profile-name">Dayro Richard Rios Piñan </p>
             <p class="profile-role">Ingeniero de Software</p>
         </div>
     </div>
 </section>
 
-<!-- About the product Section -->
+<!-- About the Team Section -->
 
-<section class="about-product" id="about-product">
-    <h2>Aprende como funciona eventify</h2>
-    <h4>Mira nuestro video tutorial y aprende a sacarle el máximo provecho desde el primer evento</h4>
-    <div class="video-about-product">
-        <iframe  src="https://www.youtube.com/embed/RmXh-lrJ9Nw?si=PjaC8JQPlI8Y3j-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" ></iframe>
+<section class="about-the-team" id="about-the-team">
+    <div class="content">
+        <h2>Sobre el equipo</h2>
+        <h4>Descubre cómo nació la idea, cómo trabajamos y por qué creemos que planificar tu evento debería ser simple y emocionante.</h4>
+        <div class="call-to-action">
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Comienza a gestionar tus eventos hoy</a>
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Encuentra tu organizador ideal</a>
+        </div>
+    </div>
+    <div class="video-about-the-team">
+        <iframe  src="https://www.youtube.com/embed/xm9CY3RWB1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" ></iframe>
     </div>
 </section>
+
+
+
+
 
 <!-- Footer Section -->
 <footer>
