@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta information for the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Eventify es la plataforma donde anfitriones encuentran al organizador ideal y organizadores hacen crecer su negocio. Conecta, organiza y celebra con confianza.">
     <meta name="keywords" content="eventos, organización, anfitriones, organizadores, bodas, celebraciones, gestión de eventos, planificación de eventos">
     <meta name="author" content="AngelDevs">
+    <!-- Favicon for the website -->
     <link rel="icon" href="./assets/images/eventify-icon.png" type="image/png">
     <title>Eventify - Landing page</title>
+    <!-- Linking external CSS and JavaScript files -->
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script defer src="./assets/scripts/script.js"></script>
-
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -26,7 +29,9 @@
             <li><a href="#plans">Plans</a></li>
             <li><a href="#about-us">About us</a></li>
             <li><a href="#about-product">About the Product</a></li>
+            <li><a class="btn-recurrent" href="https://eventify-open-frontend.web.app/home" target="_blank">Get Started</a></li>
         </ul>
+        <!-- Language switcher buttons -->
         <div class="language-switcher">
             <input type="button" value="ES" class="btn-lang" id="btn-es">
             <input type="button" value="EN" class="btn-lang active " id="btn-en">
@@ -37,19 +42,63 @@
 
 <!-- Hero Section -->
 
+
 <section class="hero" id="hero">
-    <div class="hero-image"><img src="assets/images/hero-section-image.png" alt="hero-image" loading="lazy"></div>
+    <div class="hero-image"><img src="./assets/images/hero-section-image.png" alt="hero-image" loading="lazy"></div>
     <div class="hero-info">
         <p class="title">Eventify</p>
 
         <span class="slogan">Connect - Organize - Celebrate</span>
         <p class="description">A platform for hosts to find the ideal organizer, and organizers to grow their business</p>
         <div class="call-to-action">
-            <a class="btn-action" href="#">Find your organizer</a>
-            <a class="btn-action" href="#">Join as an organizer</a>
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Find your organizer</a>
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Join as an organizer</a>
         </div>
     </div>
 </section>
+
+<!-- About the product Section -->
+
+<section class="about-product" id="about-product">
+    <div class="content">
+        <h2>Learn how eventify works</h2>
+        <h4>Watch our video tutorial and learn how to get the most out of it from the first event</h4>
+        <div class="call-to-action">
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Manage events with ease</a>
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Organize your events without stress</a>
+        </div>
+    </div>
+    <div class="video-about-product">
+        <iframe  src="https://www.youtube.com/embed/RmXh-lrJ9Nw?si=PjaC8JQPlI8Y3j-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" ></iframe>
+    </div>
+</section>
+
+<!-- Functionalities Section -->
+<section class="functionalities" id="functionalities">
+    <img src="./assets/images/functionalities-section-image.png" alt="functionalities-img" loading="lazy">
+    <div class="function-content">
+        <h2>What does Eventify offer you?</h2>
+        <div class="function-info">
+            <div class="function-card">
+                <h3>Organizers</h3>
+                <ul>
+                    <li>Create events and quotes</li>
+                    <li>Task planning by event</li>
+                    <li>Interactive calendar to organize events</li>
+                </ul>
+            </div>
+            <div class="function-card">
+                <h3>Hosts</h3>
+                <ul>
+                    <li>Search and filter organizers</li>
+                    <li>Direct communication with the organizer</li>
+                    <li>Monitoring the organizer's planning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!--Benefits Section -->
 
@@ -77,34 +126,8 @@
             </div>
         </div>
     </div>
-    <img src="assets/images/benefits-section-image.png" alt="benefits-img" loading="lazy">
+    <img src="./assets/images/benefits-section-image.png" alt="benefits-img" loading="lazy">
 
-</section>
-
-<!-- Functionalities Section -->
-<section class="functionalities" id="functionalities">
-    <img src="assets/images/functionalities-section-image.png" alt="funtionalities-img" loading="lazy">
-    <div class="function-content">
-        <h2>What does Eventify offer you?</h2>
-        <div class="function-info">
-            <div class="function-card">
-                <h3>Organizers</h3>
-                <ul>
-                    <li>Create events and quotes</li>
-                    <li>Task planning by event</li>
-                    <li>Interactive calendar to organize events</li>
-                </ul>
-            </div>
-            <div class="function-card">
-                <h3>Hosts</h3>
-                <ul>
-                    <li>Search and filter organizers</li>
-                    <li>Direct communication with the organizer</li>
-                    <li>Monitoring the organizer's planning</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </section>
 
 
@@ -122,7 +145,7 @@
             <ul class="plan-detail">
                 <li>Allows you to work with up to 2 hosts at the same time</li>
             </ul>
-            <a class="plan-card-btn" href="#">Start now</a>
+            <a class="plan-card-btn" href="https://eventify-open-frontend.web.app/home" target="_blank">Start now</a>
         </div>
         <div class="plan-card">
             <h3>Standard Plan</h3>
@@ -132,7 +155,7 @@
             <ul class="plan-detail">
                 <li>Allows you to work with up to 5 hosts at the same time</li>
             </ul>
-            <a class="plan-card-btn" href="#">Start now</a>
+            <a class="plan-card-btn" href="https://eventify-open-frontend.web.app/home" target="_blank">Start now</a>
         </div>
         <div class="plan-card">
             <h3>Premium Plan</h3>
@@ -142,55 +165,61 @@
             <ul class="plan-detail">
                 <li>Allows you to work with up to 10 hosts at the same time</li>
             </ul>
-            <a class="plan-card-btn" href="#">Start now</a>
+            <a class="plan-card-btn" href="https://eventify-open-frontend.web.app/home" target="_blank">Start now</a>
         </div>
     </div>
 </section>
-
 
 <!-- About us Section -->
 <section class="about-us" id="about-us">
     <h2>About us</h2>
     <h4>Meet the team in charge of designing and developing Eventify</h4>
     <div class="startup-profile">
-        <img class="startup-img" src="assets/images/angeldevs-logo.jpg" alt="angeldevs-logo" loading="lazy">
+        <img class="startup-img" src="./assets/images/angeldevs-logo.jpg" alt="angeldevs-logo" loading="lazy">
         <p class="startup-info">AngelDevs is a startup that specializes in developing digital and innovative solutions that transform traditional industries through accessible, scalable technology ready to evolve with the demands of the future.</p>
     </div>
     <div class="profile-list">
         <div class="profile-item">
-            <img src="assets/images/member-profile-1.png" alt="profile1" loading="lazy">
-            <p class="profile-name">Jean Pierr Aldave Aldave</p>
-            <p class="profile-role">Software Engineer</p>
-        </div>
-        <div class="profile-item">
-            <img src="assets/images/member-profile-2.jpg" alt="profile2" loading="lazy">
+            <img src="assets/images/developer-profile-2.jpg" alt="profile2" loading="lazy">
             <p class="profile-name">Omar Christian Berrocal Ramirez</p>
             <p class="profile-role">Software Engineer</p>
         </div>
         <div class="profile-item">
-            <img src="assets/images/member-profile-3.jpg" alt="profile3" loading="lazy">
+            <img src="assets/images/developer-profile-3.jpg" alt="profile3" loading="lazy">
             <p class="profile-name">Deybbi Anderson Crisanto Calle</p>
             <p class="profile-role">Software Engineer</p>
         </div>
         <div class="profile-item">
-            <img src="assets/images/member-profile-4.png" alt="profile4" loading="lazy">
+            <img src="assets/images/developer-profile-4.png" alt="profile4" loading="lazy">
             <p class="profile-name">Fabrizio Alexander Cutiri Agüero</p>
             <p class="profile-role">Software Engineer</p>
         </div>
         <div class="profile-item">
-            <img src="assets/images/member-profile-5.jpg" alt="profile5" loading="lazy">
+            <img src="assets/images/developer-profile-5.jpg" alt="profile5" loading="lazy">
             <p class="profile-name">July Zelmira Paico Calderon</p>
             <p class="profile-role">Software Engineer</p>
         </div>
+        <div class="profile-item">
+            <img src="assets/images/developer-profile-6.jpg" alt="profile6" loading="lazy">
+            <p class="profile-name">Dayro Richard Rios Piñan </p>
+            <p class="profile-role">Software Engineer</p>
+        </div>
+
     </div>
 </section>
 
-<!-- About the product Section -->
+<!-- About the Team Section -->
 
-<section class="about-product" id="about-product">
-    <h2>Learn how eventify works</h2>
-    <h4>Watch our video tutorial and learn how to get the most out of it from the first event</h4>
-    <div class="video-about-product">
+<section class="about-the-team" id="about-the-team">
+    <div class="content">
+        <h2>About the Team</h2>
+        <h4>See how the idea was born, how we work and why we believe planning your event should be simple and exciting.</h4>
+        <div class="call-to-action">
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Start managing your events today</a>
+            <a class="btn-action" href="https://eventify-open-frontend.web.app/home" target="_blank">Find your ideal organizer</a>
+        </div>
+    </div>
+    <div class="video-about-the-team">
         <iframe  src="https://www.youtube.com/embed/RmXh-lrJ9Nw?si=PjaC8JQPlI8Y3j-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" ></iframe>
     </div>
 </section>
@@ -198,7 +227,7 @@
 <!-- Footer Section -->
 <footer>
     <div class="footer-content">
-        <img class="logo" src="assets/images/eventify-logo.png" alt="eventify-logo" loading="lazy">
+        <img class="logo" src="./assets/images/eventify-logo.png" alt="eventify-logo">
         <div class="footer-contact">
             <span>Contacts</span>
             <p><i class="fa-solid fa-envelope"></i> eventify@angeldevs.com</p>
@@ -210,7 +239,7 @@
                 <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#functionalities">Functionalities</a></li>
                 <li><a href="#plans">Plans</a></li>
-                <li><a href="#quienes-somos">About us</a></li>
+                <li><a href="#about-us">About us</a></li>
                 <li><a href="#about-product">About the product</a></li>
             </ul>
         </div>
@@ -227,6 +256,7 @@
     </div>
     <p class="copyright">Copyright © 2025 Eventify. All rights reserved.</p>
 </footer>
+
 
 </body>
 
